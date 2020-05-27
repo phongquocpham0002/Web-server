@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web send mail (private)</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <form id="form-send-mail">
+    <h1>Web send mail</h1>
+    <div class="input-wrapper" >
+      <label for="from">Email</label>
+      <input id="from" type="email" name="from" required>
+    </div>
+    <div class="input-wrapper">
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" required>
+    </div>
+    <div class="input-wrapper">
+      <label for="to">Send to</label>
+      <input id="to" type="email" name="to" required>
+    </div>
+    <div class="input-wrapper">
+      <label for="subject">Mail subject</label>
+      <input id="subject" type="text" name="subject" required>
+    </div>
+    <div class="textarea-wrapper">
+      <label for="content">Mail content</label>
+      <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+    </div>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
